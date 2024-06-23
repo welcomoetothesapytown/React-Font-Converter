@@ -1,18 +1,9 @@
-import { useState } from 'react'
-function Panel(){
-  return(
-    <h1>Hello from the other world</h1>
-  )
-}
+import  Task  from './Task.jsx'
+let nextId=0;
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <Panel />
-      
-    </>
+  return(
+  <Task nextId={nextId}/>
   )
 }
 
